@@ -1,4 +1,5 @@
 /*** Ejercicio con CSS Grid ****/
+/* Dos Columnas iguales */
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -40,6 +41,13 @@ h1 {
 }
 
 /** CODIGO AQUI **/
-@media (min-width: ) {
-    
+@media (min-width: 768px) {
+    .dos-columnas {
+        display: grid;  /* aplicamos las propiedades de CSS Grid*/
+        grid-template-columns: 50% 50%; /* Modificar el layout */
+        /* grid-template-columns: repeat(2, 50%); Esto hace lo mismo */
+        /* grid-template-columns: 1fr 1fr; Otra manera de hacerlo */
+        /* grid-template-columns: repeat(2, 1fr); Esto es la manera estandar en CSS Grid */
+        column-gap: 3rem; /* Seperación de columnas */
+    }
 }
