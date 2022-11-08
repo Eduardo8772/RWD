@@ -1,3 +1,6 @@
+
+/*** Ejercicio con Flexbox ***/
+/* Dos columnas */
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -39,3 +42,24 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) {
+    .dos-columnas {
+        display: flex; /*Acceso a las propiedas de flexbox*/
+        justify-content: space-between; /* Nos permite alinear contenido de izquierda a derecha */
+        gap: 2rem; /*Este elemento es nuevo y ahora es estandar (aún no tiene mucho soporte)*/
+    }
+
+    /*
+    ** En anteriores versiones a CSS se escribe un selector para el hijo y se utilizaba flex
+    Actualmente ya no es utilizado.
+    .entrada-blog {
+        flex: 0 0 calc(50% - 1rem); Toma 3 valores: 1ro factor de crecimiento 2do factor de hacer más pequeño 3ro Tamaño base
+    }
+    */
+}
+
+/*
+Cuando aplicamos display flex todos los elementos HIJOS 
+se muestran de izquierda a derecha  **Siempres debemos ir al elemento padre para 
+aplicar diplay flex o dipslay grid** es una regla que siempre aplica
+*/
