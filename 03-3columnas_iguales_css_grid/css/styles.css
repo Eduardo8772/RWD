@@ -1,3 +1,4 @@
+/*Tres columnas iguales con CSS Grid*/
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -39,3 +40,10 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) { /*768px estandar tamaño estandar Tablet*/
+    .tres-columnas { 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /*Layout 3 columnas*/
+        column-gap: 2rem; /*Seperación entre columnas*/
+    }
+}
