@@ -1,3 +1,4 @@
+/*** Ejercicio con CSS Grid ****/
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -39,3 +40,6 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+@media (min-width: ) {
+    
+}
