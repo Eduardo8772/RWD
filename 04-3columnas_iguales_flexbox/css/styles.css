@@ -1,3 +1,4 @@
+/* Ejercicio flexbox tres columnas iguales */
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -39,3 +40,14 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) {
+    .tres-columnas {
+        display: flex; /*flexbox es más utilizado para dar estilo por ejemplo a una nav bar que tiene un estilo horizontal*/
+        /* gap: 2rem; Con esto automaticamente se divide el contenido en 3 columnas pero aún no tiene mucho soporte*/
+        justify-content: space-between;
+    }
+     /*Soporte en todos lo navegadores*/
+    .entrada-blog {
+        flex: 0 0 calc(33.1% - 1rem);
+    }
+}
