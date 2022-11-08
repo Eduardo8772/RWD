@@ -1,3 +1,4 @@
+/* Ejercicio flexbo tres columnas diferentes */
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -48,3 +49,22 @@ p {
 }
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) {
+    .contenedor-flex {
+        display: flex; /* Propiedades flex */
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .contenido-principal {
+        flex-basis: calc(60% - 1rem);
+    }
+
+    .sidebar {
+        flex-basis: calc(20% - 1rem);
+    }
+
+    .sidebar-1 { /*Mover elemento del lado izquierdo*/
+        order: -1;
+    }
+}
